@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ImaginAI is a state-of-the-art AI-powered image generation platform. Generate stunning photorealistic art, characters, and spacescapes from simple text prompts in seconds.">
+    <meta name="keywords" content="AI, Image Generator, SaaS, Text-to-Image, Digital Art, Cyberpunk, Sci-fi, Fantasy">
+    <meta name="author" content="ImaginAI Corporation">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ImaginAI - Turn Prompts Into Masterpieces">
+    <meta property="og:description" content="Create mind-bending AI art with our state-of-the-art diffusion models. Fast, high-fidelity, and fully customizable.">
+    <meta property="og:image" content="assets/hero-showcase.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="ImaginAI - Turn Prompts Into Masterpieces">
+    <meta property="twitter:description" content="Create mind-bending AI art with our state-of-the-art diffusion models. Fast, high-fidelity, and fully customizable.">
+    <meta property="twitter:image" content="assets/hero-showcase.png">
+
+    <title>ImaginAI - AI Image Generator SaaS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-icon">✧</span>
+                <span class="logo-text">Imagin<span class="gradient-text">AI</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#simulator" class="nav-link">Simulator</a>
+                <a href="#how-it-works" class="nav-link">Workflow</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#pricing" class="btn btn-outline" id="nav-login-btn">Log In</a>
+                <a href="#simulator" class="btn btn-primary btn-glow" id="nav-cta-btn">Launch App</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="grid-glow-background"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge" id="hero-badge">✧ Next-Gen v3.5 Live</div>
+                    <h1 class="hero-title">
+                        Generate <span class="gradient-text animate-gradient">Masterpieces</span> in Seconds
+                    </h1>
+                    <p class="hero-subtitle">
+                        Experience the next generation of text-to-image synthesis. Turn complex ideas into photorealistic art, stunning avatars, and futuristic concepts instantly.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#simulator" class="btn btn-primary btn-large btn-glow" id="hero-primary-btn">Start Generating Free</a>
+                        <a href="#gallery" class="btn btn-secondary btn-large" id="hero-secondary-btn">Explore Gallery</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">Images Created</span>
+                        </div>
+                        <div class="stat-item-separator"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9/5</span>
+                            <span class="stat-label">User Rating</span>
+                        </div>
+                        <div class="stat-item-separator"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">&lt; 2.5s</span>
+                            <span class="stat-label">Avg Speed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-wrapper glass">
+                        <img src="assets/hero-showcase.png" alt="Futuristic cyberpunk city AI generation" class="hero-image" id="hero-img">
+                        <div class="prompt-overlay-badge">
+                            <span class="overlay-icon">⚡</span>
+                            <span class="overlay-text">Prompt: A cyberpunk city at night with neon-lit towers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Features</span>
+                    <h2 class="section-title">Built for Creators & Developers</h2>
+                    <p class="section-desc">Experience a suite of advanced features designed to maximize speed, quality, and creative freedom.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass" id="feat-1">
+                        <div class="feature-icon bg-violet">✦</div>
+                        <h3 class="feature-title">Ultra HD Synthesis</h3>
+                        <p class="feature-desc">Render assets in up to 8K resolution with native scaling algorithms that preserve micro-details and textures perfectly.</p>
+                    </div>
+
+                    <div class="feature-card glass" id="feat-2">
+                        <div class="feature-icon bg-magenta">⚡</div>
+                        <h3 class="feature-title">Smart Prompt Refiner</h3>
+                        <p class="feature-desc">Our integrated large language models expand short prompts automatically to add artistic styling, textures, and camera angles.</p>
+                    </div>
+
+                    <div class="feature-card glass" id="feat-3">
+                        <div class="feature-icon bg-cyan">☄</div>
+                        <h3 class="feature-title">Realtime Canvas Editor</h3>
+                        <p class="feature-desc">Seamlessly edit parts of generated images using inpainting, outpainting, and custom mask paint brushes.</p>
+                    </div>
+
+                    <div class="feature-card glass" id="feat-4">
+                        <div class="feature-icon bg-violet">♦</div>
+                        <h3 class="feature-title">Custom Fine-Tuning</h3>
+                        <p class="feature-desc">Upload 10-15 reference images to train a custom checkpoint with your own face, character model, or product layout in minutes.</p>
+                    </div>
+
+                    <div class="feature-card glass" id="feat-5">
+                        <div class="feature-icon bg-magenta">⚙</div>
+                        <h3 class="feature-title">Developer-First API</h3>
+                        <p class="feature-desc">Integrate high-speed image generation directly into your application using our REST APIs, SDKs, and Webhooks with 99.9% uptime.</p>
+                    </div>
+
+                    <div class="feature-card glass" id="feat-6">
+                        <div class="feature-icon bg-cyan">☁</div>
+                        <h3 class="feature-title">Lightning Cloud Gen</h3>
+                        <p class="feature-desc">Distributed node processing ensures your creations are queued, rendered, and uploaded to hot-storage in under 3 seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Simulator -->
+        <section class="simulator-section" id="simulator">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Interactive Sandbox</span>
+                    <h2 class="section-title">Test Drive the Generation Engine</h2>
+                    <p class="section-desc">Try out a simulation of our AI system. Choose a preset prompt or write your own, then hit generate to watch it render in real-time.</p>
+                </div>
+
+                <div class="simulator-wrapper glass">
+                    <div class="simulator-controls">
+                        <div class="presets-container">
+                            <span class="preset-label">Try presets:</span>
+                            <button class="preset-btn active" data-prompt="A magical bioluminescent forest at night, glowing neon mushrooms, ancient mystical trees" data-target="art-fantasy">Magical Forest</button>
+                            <button class="preset-btn" data-prompt="A close-up portrait of a female astronaut wearing a sleek white and gold spacesuit with glowing cyan accents" data-target="art-character">Cybernetic Astronaut</button>
+                            <button class="preset-btn" data-prompt="A sleek futuristic spaceship traveling through a colorful, vibrant cosmic nebula" data-target="art-scifi">Cosmic Spaceship</button>
+                        </div>
+
+                        <div class="prompt-input-wrapper">
+                            <textarea class="prompt-textarea" id="prompt-input" placeholder="Type a prompt for your masterpiece...">A magical bioluminescent forest at night, glowing neon mushrooms, ancient mystical trees</textarea>
+                            <div class="prompt-meta-actions">
+                                <span class="char-counter"><span id="char-count">84</span> characters</span>
+                                <button class="btn btn-primary btn-glow" id="btn-generate">
+                                    <span>Generate</span>
+                                    <span class="btn-icon">⚡</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Console Status (Wow Factor) -->
+                        <div class="console-box" id="console-box">
+                            <div class="console-header">
+                                <span class="console-dot red"></span>
+                                <span class="console-dot yellow"></span>
+                                <span class="console-dot green"></span>
+                                <span class="console-title">Engine Logs</span>
+                            </div>
+                            <div class="console-body" id="console-logs">
+                                <div class="log-line text-dim">&gt; Ready for inference.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simulator-preview">
+                        <div class="preview-container">
+                            <!-- Loader Grid Scan Effect -->
+                            <div class="preview-loader-wrapper" id="preview-loader">
+                                <div class="scan-bar"></div>
+                                <div class="loader-spinner"></div>
+                                <span class="loader-percentage" id="loader-percent">0%</span>
+                                <span class="loader-status" id="loader-status">Initializing weights...</span>
+                            </div>
+                            
+                            <img src="assets/art-fantasy.png" alt="Generated preview result" class="preview-image" id="preview-result-img">
+                            
+                            <div class="image-actions-overlay" id="preview-overlay">
+                                <button class="overlay-btn" id="btn-copy-prompt-sim" title="Copy Prompt">
+                                    <span>Copy Prompt</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                                </button>
+                                <a href="assets/art-fantasy.png" download class="overlay-btn" id="btn-download-sim" title="Download Image">
+                                    <span>Download HD</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Workflow</span>
+                    <h2 class="section-title">Create In Three Simple Steps</h2>
+                    <p class="section-desc">Creating AI art has never been so seamless. Our intuitive UI handles the complexity so you can focus on the vision.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-step" id="step-1">
+                        <div class="step-num-wrapper">
+                            <div class="step-number">1</div>
+                        </div>
+                        <div class="step-content glass">
+                            <h3 class="step-title">Write a Prompt</h3>
+                            <p class="step-desc">Type what you want to see. Specify styles like "Cyberpunk", "Oil Painting", or specify exact lighting like "Volumetric Raytracing".</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" id="step-2">
+                        <div class="step-num-wrapper">
+                            <div class="step-number">2</div>
+                        </div>
+                        <div class="step-content glass">
+                            <h3 class="step-title">Customize parameters</h3>
+                            <p class="step-desc">Select resolution, aspect ratios (16:9, 1:1, 9:16), number of generation variations, and style weights to guide the diffusion model.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" id="step-3">
+                        <div class="step-num-wrapper">
+                            <div class="step-number">3</div>
+                        </div>
+                        <div class="step-content glass">
+                            <h3 class="step-title">Receive & Refine</h3>
+                            <p class="step-desc">Get four high-fidelity concepts in under 3 seconds. Use the paint mask tool to repaint details or click UPSCALE to export in 4K resolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Art Gallery Showcase -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Showcase Gallery</span>
+                    <h2 class="section-title">Masterpieces Crafted by Our Users</h2>
+                    <p class="section-desc">Explore outstanding artwork created with our platform and copy the prompts to build your own variations.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item glass" id="gal-item-1">
+                        <img src="assets/art-fantasy.png" alt="Bioluminescent Forest Magic" class="gallery-image">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-card-content">
+                                <span class="gallery-style-tag">Fantasy / 3D Render</span>
+                                <h4 class="gallery-item-title">Magical Bioluminescent Forest</h4>
+                                <p class="gallery-prompt-text">"A magical bioluminescent forest at night, glowing neon mushrooms, ancient mystical trees with glowing roots..."</p>
+                                <button class="btn btn-primary btn-small btn-copy-prompt" data-prompt="A magical bioluminescent forest at night, glowing neon mushrooms, ancient mystical trees with glowing roots, a shimmering stream, soft fantasy lighting, highly detailed 3D render style, dreamlike atmosphere.">
+                                    Copy Prompt ⚡
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item glass" id="gal-item-2">
+                        <img src="assets/art-character.png" alt="Cybernetic Astronaut" class="gallery-image">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-card-content">
+                                <span class="gallery-style-tag">Sci-Fi / Unreal Engine</span>
+                                <h4 class="gallery-item-title">Cybernetic Astronaut</h4>
+                                <p class="gallery-prompt-text">"A close-up portrait of a female astronaut wearing a sleek white and gold spacesuit with glowing cyan accents..."</p>
+                                <button class="btn btn-primary btn-small btn-copy-prompt" data-prompt="A close-up portrait of a female astronaut wearing a sleek white and gold spacesuit with glowing cyan accents, cybernetic visor displaying data interfaces, highly detailed face, cinematic studio lighting, dark cosmic background, Unreal Engine 5 render style.">
+                                    Copy Prompt ⚡
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item glass" id="gal-item-3">
+                        <img src="assets/art-scifi.png" alt="Retro Cosmic Spaceship" class="gallery-image">
+                        <div class="gallery-card-overlay">
+                            <div class="gallery-card-content">
+                                <span class="gallery-style-tag">Retro Wave / Concept Art</span>
+                                <h4 class="gallery-item-title">Nebula Spaceship Voyager</h4>
+                                <p class="gallery-prompt-text">"A sleek futuristic spaceship traveling through a colorful, vibrant cosmic nebula, glowing propulsion engines..."</p>
+                                <button class="btn btn-primary btn-small btn-copy-prompt" data-prompt="A sleek futuristic spaceship traveling through a colorful, vibrant cosmic nebula, glowing propulsion engines, bright pink, orange, and purple cosmic gas clouds, distant glittering stars, epic sci-fi concept art.">
+                                    Copy Prompt ⚡
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pricing Plans</span>
+                    <h2 class="section-title">Flexible Plans for Every Creator</h2>
+                    <p class="section-desc">Get started for free or upgrade to unlock unlimited premium rendering cycles, dedicated API keys, and custom model fine-tuning.</p>
+                    
+                    <div class="pricing-toggle-container">
+                        <span class="toggle-label active" id="label-monthly">Monthly</span>
+                        <button class="pricing-toggle-btn" id="billing-toggle" aria-label="Toggle billing frequency">
+                            <span class="toggle-circle"></span>
+                        </button>
+                        <span class="toggle-label" id="label-yearly">Yearly <span class="discount-badge">Save 20%</span></span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card glass" id="plan-starter">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Creator Starter</h3>
+                            <p class="plan-desc">Perfect for trying out our next-gen generator engine.</p>
+                            <div class="plan-price">
+                                <span class="price-currency">$</span>
+                                <span class="price-val" id="price-starter">0</span>
+                                <span class="price-period" id="period-starter">/mo</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><span>✓</span> 50 generations / month</li>
+                                <li><span>✓</span> Standard generation speed</li>
+                                <li><span>✓</span> Access to basic styles</li>
+                                <li><span>✓</span> Max resolution up to 2K</li>
+                                <li class="disabled"><span>✗</span> API Developer Keys</li>
+                                <li class="disabled"><span>✗</span> Custom Fine-tuning models</li>
+                            </ul>
+                        </div>
+                        <a href="#simulator" class="btn btn-secondary btn-full" id="btn-start-starter">Get Started</a>
+                    </div>
+
+                    <!-- Pro Plan (Popular) -->
+                    <div class="pricing-card glass popular" id="plan-pro">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">Professional Pro</h3>
+                            <p class="plan-desc">For designers, creators, and power-users requiring maximum detail.</p>
+                            <div class="plan-price">
+                                <span class="price-currency">$</span>
+                                <span class="price-val" id="price-pro">19</span>
+                                <span class="price-period" id="period-pro">/mo</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><span>✓</span> <strong>Unlimited</strong> generations</li>
+                                <li><span>✓</span> Priority queue (Render in &lt; 2.5s)</li>
+                                <li><span>✓</span> Native 8K upscaling engine</li>
+                                <li><span>✓</span> 3 trained custom checkpoints</li>
+                                <li><span>✓</span> Access to all premium styles</li>
+                                <li class="disabled"><span>✗</span> Dedicated enterprise API</li>
+                            </ul>
+                        </div>
+                        <a href="#simulator" class="btn btn-primary btn-glow btn-full" id="btn-start-pro">Subscribe Now</a>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card glass" id="plan-enterprise">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Scale Enterprise</h3>
+                            <p class="plan-desc">Custom infrastructure built for business and large scale projects.</p>
+                            <div class="plan-price">
+                                <span class="price-currency">$</span>
+                                <span class="price-val" id="price-enterprise">99</span>
+                                <span class="price-period" id="period-enterprise">/mo</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><span>✓</span> Unlimited generations</li>
+                                <li><span>✓</span> Ultra-high priority queue (H100 clusters)</li>
+                                <li><span>✓</span> Dedicated high-throughput API endpoints</li>
+                                <li><span>✓</span> Infinite custom checkpoint training</li>
+                                <li><span>✓</span> Dedicated Account Executive</li>
+                                <li><span>✓</span> Custom model training integration</li>
+                            </ul>
+                        </div>
+                        <a href="#simulator" class="btn btn-secondary btn-full" id="btn-start-enterprise">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Frequently Asked Questions</span>
+                    <h2 class="section-title">Got Questions? We've Got Answers</h2>
+                    <p class="section-desc">Here are the most common questions regarding our AI generation capabilities, credits, and licensing details.</p>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <div class="faq-item glass" id="faq-item-1">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>How do image credits work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For the Creator Starter plan, you get 50 credits every month which reset on the 1st. Each generation request outputs 4 distinct images and consumes 1 credit. Upgrading to the Pro plan grants you infinite generations with no throttling.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass" id="faq-item-2">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>Do I own the rights to the generated images?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, you retain full commercial copyright ownership over all images generated on your account, regardless of the plan you choose. This means you can use the art in games, advertising campaigns, and prints.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass" id="faq-item-3">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>What is a custom model checkpoint training?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fine-tuning allows you to upload a small dataset of 10-15 images of a specific person, art style, object, or character. Our servers then train a custom adapter model. When generating, you can invoke this style via trigger words to render consistency.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass" id="faq-item-4">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>Can I integrate ImaginAI into my own web application?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! The Enterprise plan unlocks API developer access. Our developer portal provides full documentation, API keys, and SDK integrations in Python, JS, and Rust to easily hook generation engines into your product pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="container newsletter-container glass">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Subscribe to the ImaginAI Gazette</h2>
+                    <p class="newsletter-desc">Get the latest feature updates, AI research highlights, prompts, and tutorials delivered straight to your inbox weekly.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+                    <button type="submit" class="btn btn-primary btn-glow" id="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">✧</span>
+                    <span class="logo-text">Imagin<span class="gradient-text">AI</span></span>
+                </a>
+                <p class="footer-brand-desc">Expanding the horizons of human imagination through neural synthesis and decentralized GPU scaling.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" title="Twitter">𝕏</a>
+                    <a href="#" class="social-link" title="Discord">💬</a>
+                    <a href="#" class="social-link" title="GitHub">🐙</a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#simulator">Simulator</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">Release Notes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Status</a></li>
+                    <li><a href="#">Community Art</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright-text">&copy; 2026 ImaginAI Corporation. All rights reserved.</p>
+                <p class="engine-version">Engine Version: 3.5.42-hotfix</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container for prompt copies -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
